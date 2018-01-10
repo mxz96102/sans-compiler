@@ -1,0 +1,32 @@
+section .data
+	a	DW	0000H
+	b	DD	00000000H
+	d	DW	0000H
+	c	DW	0000H
+global mystart
+mystart:
+	MOV	1, 1, a
+	MOV	1073741824, 1073741824, b
+	MINUS	a, 1, rbx
+	JE	IFYlG, IFYlG, IFYlG
+	JMP	IFxbW, IFxbW, IFxbW
+IFYlG: 
+	MOV	1, 1, c
+	MINUS	1120403456, b, rbx
+	JNS	WHXi1, WHXi1, WHXi1
+WHXi1: 
+	PLUS	c, 2, rbx
+	MINUS	c, rbx, rbx
+	MINUS	1120403456, b, rbx
+	JNS	WHXi1, WHXi1, WHXi1
+IFxbW: 
+	MINUS	a, 1, rbx
+	JNS	IFQCd, IFQCd, IFQCd
+	JMP	IFQd3, IFQd3, IFQd3
+IFQCd: 
+	MOV	2, 2, d
+	STAR	4, 5, rbx
+	PLUS	rbx, 3, rbx
+	MINUS	d, rbx, rbx
+IFQd3: 
+	INT	0x80, 0x80, 0x80

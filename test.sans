@@ -1,0 +1,12 @@
+int a <- 1;
+float b <- 2.;
+
+if a = 1 then
+    int c <- 1;
+    while b < 100. do
+        c = c + 2;
+    done
+else if a > 1 then
+    int d <- 2;
+    d = 3 + 4 * 5;
+endif
